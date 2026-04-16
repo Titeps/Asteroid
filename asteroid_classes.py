@@ -61,7 +61,7 @@ class Asteroid(SpaceObject):
         if self.level > 1:
             for _ in range(3):
                 speed = randint(-30,70),randint(-50,50)
-                rotation_speed = randint(-20,20)
+                rotation_speed = randint(-20,15)
                 asteroid = Asteroid(self.position, speed,rotation_speed,self.level - 1)
                 
                 self.layer.add(asteroid)
